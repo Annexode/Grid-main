@@ -1031,3 +1031,29 @@ video {
   padding: 30px 50px;
   height: 100vh;
 }
+
+@media (min-width: 640px) {
+  .sm\:grid-flow-row {
+    grid-auto-flow: row;
+  }
+
+  .sm\:grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:grid-cols-\[150px_150px_150px_150px\] {
+    grid-template-columns: 150px 150px 150px 150px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:grid-cols-\[150px_150px_150px_150px\] {
+    grid-template-columns: 150px 150px 150px 150px;
+  }
+
+  .xl\:grid-rows-\[180px_140px_140px\] {
+    grid-template-rows: 180px 140px 140px;
+  }
+}
